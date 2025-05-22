@@ -44,12 +44,23 @@ button {
     line-height: 1;
 }
 
-a {
+nav {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
     padding: 10px 15px 10px 15px;
+}
+
+nav:hover {
+    color: var(--green);
+}
+
+a {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
 }
 
 a:hover {
