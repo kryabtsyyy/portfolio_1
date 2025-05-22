@@ -116,7 +116,7 @@ button.hover{
     padding: 6px 10px 10px 10px;
     border: 1px;
     border-radius: 100%;
-    color: var(--txt-color);
+    color: var(--green);
     background-color: var(--green);
     cursor: pointer;
 }
