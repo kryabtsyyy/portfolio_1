@@ -53,3 +53,19 @@ subtitle {
     font-weight: 400;
     line-height: 1.5;
 }
+
+:root {
+    --txt-color: #031923;
+    --green: #09A494;
+    --bg-color: #ffffff;
+}
+
+body {
+    color: var(--txt-color);
+    background-color: var(var(--bg-color));
+}
+
+footer {
+    color: var(--txt-color);
+    background-color: var(var(--bg-color));
+}
