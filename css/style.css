@@ -254,18 +254,18 @@ button.hover{
 }
 
 .skill-item_html {
-    background-image: url("../img/skills/html.svg");
+    background-image: url("../img/skill/html.svg");
 }
 
 .skill-item_css {
-    background-image: url("../img/skills/css.svg");
+    background-image: url("../img/skill/css.svg");
 }
 
 .skill-item_cpp {
-    background-image: url("../img/skills/c++.svg");
+    background-image: url("../img/skill/c++.svg");
 }
 
 .skill-item_python {
-    background-image: url("../img/skills/python.svg");
+    background-image: url("../img/skill/python.svg");
 }
 
