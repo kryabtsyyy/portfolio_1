@@ -108,7 +108,7 @@ button {
     border: 1px;
     border-radius: 100%;
     color: var(--green);
-    background-color: var(--bg-color);
+    background-color: var(--green);
     cursor: pointer;
 }
 
