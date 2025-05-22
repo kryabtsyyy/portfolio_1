@@ -29,7 +29,7 @@ body {
  */
 
 main {
-  display: block;
+  display: inline-block;
 }
 
 /**
@@ -74,7 +74,8 @@ pre {
  */
 
 a {
-  background-color: transparent;
+  
+  background-color: #ffffff;
 }
 
 /**
@@ -84,8 +85,8 @@ a {
 
 abbr[title] {
   border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  text-decoration: none; /* 2 */
+  text-decoration: none; /* 2 */
 }
 
 /**
@@ -318,7 +319,7 @@ textarea {
  */
 
 details {
-  display: block;
+  display: inline-block;
 }
 
 /*
