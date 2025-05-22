@@ -106,7 +106,7 @@ nav {
 button {
     padding: 6px 10px 10px 10px;
     border: 1px;
-    border-radius: 1px;
+    border-radius: 100%;
     color: var(--green);
     background-color: var(--bg-color);
     cursor: pointer;
@@ -115,8 +115,53 @@ button {
 button.hover{
     padding: 6px 10px 10px 10px;
     border: 1px;
-    border-radius: 1px;
+    border-radius: 100%;
     color: var(--bg-color);
     background-color: var(--green);
     cursor: pointer;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+social-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background-color: var(--bg-color);
+}
+
+social-link.hover {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    border-radius: 50%;
+    color: var(--txt-color);
+    background-color: var(--green);
 }
