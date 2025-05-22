@@ -80,6 +80,11 @@ footer {
     background-color: var(var(--bg-color));
 }
 
+nav {
+    color: var(--txt-color);
+    background-color: var(var(--bg-color));
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -88,9 +93,19 @@ footer {
 }
 
 button {
-    padding: 0;
-    border: none;
-    color: inherit;
-    background-color: transparent;
+    padding: 6px 10px 10px 10px;
+    border: 1px;
+    border-radius: 1px;
+    color: var(--green);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+button.hover{
+    padding: 6px 10px 10px 10px;
+    border: 1px;
+    border-radius: 1px;
+    color: var(--bg-color);
+    background-color: var(--green);
     cursor: pointer;
 }
