@@ -165,3 +165,23 @@ social-link.hover {
     color: var(--txt-color);
     background-color: var(--green);
 }
+
+social-link_instagram {
+    background-image: url("img\social=instagram.svg");
+}
+
+social-link_gitlab {
+    background-image: url("img\social=gitlab.svg");
+}
+
+social-link_github {
+    background-image: url("img\social=github.svg");
+}
+
+social-link_telegram {
+    background-image: url("img\social=telegram.svg");
+}
+
+social-link_vk {
+    background-image: url("img\social=vk.svg");
+}
