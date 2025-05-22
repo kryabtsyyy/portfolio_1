@@ -183,3 +183,42 @@ button.hover{
     background-image: url(..//img/social=vk.svg);
 }
 
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    border-radius: 50%;
+}
+
+.contact-link.hover {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+.contact-link_phone {
+    background-image: url(../img/icon=phone.svg);
+}
+
+.contact-link_mail {
+    background-image: url(../img/icon=email.svg);
+}
+
+
+
