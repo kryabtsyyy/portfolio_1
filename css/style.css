@@ -107,8 +107,8 @@ button {
     padding: 6px 10px 10px 10px;
     border: 1px;
     border-radius: 100%;
-    color: var(--txt-color);
-    background-color: var(--green);
+    color: var(--green);
+    background-color: var(--bg-color);
     cursor: pointer;
 }
 
@@ -116,7 +116,7 @@ button.hover{
     padding: 6px 10px 10px 10px;
     border: 1px;
     border-radius: 100%;
-    color: var(--txt-color);
+    color: var(--bg-color);
     background-color: var(--green);
     cursor: pointer;
 }
@@ -152,8 +152,6 @@ button.hover{
     height: 30px;
     border: 1px;
     border-radius: 50%;
-    color: var(--green);
-    background-color: var(--bg-color);
 }
 
 .social-link.hover {
@@ -162,7 +160,6 @@ button.hover{
     height: 30px;
     border: 1px;
     border-radius: 50%;
-    color: var(--txt-color);
     background-color: var(--green);
 }
 
