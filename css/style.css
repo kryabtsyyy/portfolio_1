@@ -107,7 +107,7 @@ button {
     padding: 6px 10px 10px 10px;
     border: 1px;
     border-radius: 100%;
-    color: var(--green);
+    color: var(--txt-color);
     background-color: var(--green);
     cursor: pointer;
 }
@@ -116,7 +116,7 @@ button.hover{
     padding: 6px 10px 10px 10px;
     border: 1px;
     border-radius: 100%;
-    color: var(--green);
+    color: var(--txt-color);
     background-color: var(--green);
     cursor: pointer;
 }
