@@ -46,10 +46,10 @@ button {
 
 a {
     font-family: "Open Sans", "Arial", sans-serif;
-
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
+    padding: 10px 15px 10px 15px;
 }
 
 a:hover {
@@ -85,4 +85,12 @@ footer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 }
