@@ -221,5 +221,51 @@ button.hover{
     background-image: url(../img/icon=email.svg);
 }
 
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
 
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--blue);
+    border-radius: 16px;
+}
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--yellow);
+    border-radius: 8px;
+}
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+.skill-item_html {
+    background-image: url("../img/skills/html.svg");
+}
+
+.skill-item_css {
+    background-image: url("../img/skills/css.svg");
+}
+
+.skill-item_cpp {
+    background-image: url("../img/skills/c++.svg");
+}
+
+.skill-item_python {
+    background-image: url("../img/skills/python.svg");
+}
 
