@@ -146,7 +146,7 @@ button.hover{
     overflow: hidden;
 }
 
-social-link {
+.social-link {
     display: block;
     width: 30px;
     height: 30px;
@@ -156,7 +156,7 @@ social-link {
     background-color: var(--bg-color);
 }
 
-social-link.hover {
+.social-link.hover {
     display: block;
     width: 30px;
     height: 30px;
@@ -166,22 +166,22 @@ social-link.hover {
     background-color: var(--green);
 }
 
-social-link_instagram {
-    background-image: url("img\social=instagram.svg");
+.social-link_instagram {
+   background-image: url("img\social=instagram.svg");
 }
 
-social-link_gitlab {
+.social-link_gitlab {
     background-image: url("img\social=gitlab.svg");
 }
 
-social-link_github {
+.social-link_github {
     background-image: url("img\social=github.svg");
 }
 
-social-link_telegram {
+.social-link_telegram {
     background-image: url("img\social=telegram.svg");
 }
 
-social-link_vk {
+.social-link_vk {
     background-image: url("img\social=vk.svg");
 }
