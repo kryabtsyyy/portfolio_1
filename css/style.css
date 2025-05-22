@@ -152,7 +152,7 @@ button.hover{
     height: 30px;
     border: 1px;
     border-radius: 50%;
-    color: var(--bg-color);
+    color: var(--txt-color);
     background-color: var(--bg-color);
 }
 
