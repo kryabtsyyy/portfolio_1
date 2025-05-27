@@ -1,3 +1,9 @@
+:root {
+    --txt-color: #031923;
+    --green: #09A494;
+    --bg-color: #ffffff;
+}
+
 *,
 *::before,
 *::after {
@@ -74,12 +80,6 @@ subtitle {
     font-weight: 400;
     line-height: 1.5;
     color: var(--green);
-}
-
-:root {
-    --txt-color: #031923;
-    --green: #09A494;
-    --bg-color: #ffffff;
 }
 
 body {
