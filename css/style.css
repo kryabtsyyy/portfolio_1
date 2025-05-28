@@ -159,36 +159,35 @@ button.hover{
     display: block;
     width: 30px;
     height: 30px;
-    border: 1px;
+    border: 1px solid var(--green);
     border-radius: 50%;
+    padding: 10px;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .social-link.hover {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px;
-    border-radius: 50%;
     background-color: var(--green);
 }
 
-.social-link_instagram {
+.instagram {
    background-image: url(../img/social=instagram.svg);
 }
 
-.social-link_gitlab {
+.gitlab {
     background-image: url(../img/social=gitlab.svg);
 }
 
-.social-link_github {
+.github {
     background-image: url(../img/social=github.svg);
 }
 
-.social-link_telegram {
+.telegram {
     background-image: url(../img/social=telegram.svg);
 }
 
-.social-link_vk {
+.vk {
     background-image: url(..//img/social=vk.svg);
 }
 
@@ -209,7 +208,10 @@ button.hover{
     width: 30px;
     height: 30px;
     border: 1px;
-    border-radius: 50%;
+    text-decoration: none;
+    padding: 5px 0px 5px 42px;
+    color: var(--txt-color);
+    background-repeat: no-repeat;
 }
 
 .contact-link.hover {
@@ -263,7 +265,7 @@ button.hover{
 }
 .skill-level div {
     height: 14px;
-    background-color: var(--second-color);
+    background-color: var(--green);
     border-radius: 8px;
 }
 .skill-item {
