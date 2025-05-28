@@ -229,12 +229,24 @@ button.hover{
     background-image: url(../img/icon=email.svg);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .skill-list {
     margin: 0;
     padding: 0;
     line-height: 1;
-}
-
+    }
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
@@ -242,23 +254,20 @@ button.hover{
     background-repeat: no-repeat;
     background-size: 30px;
 }
-
 .skill-level {
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--txt-color);
     border-radius: 16px;
 }
-
 .skill-level div {
     height: 14px;
-    background-color: var(--yellow);
+    background-color: var(--second-color);
     border-radius: 8px;
 }
-
 .skill-item {
-    text-transform: lowercase;
+    transform: lowercase;
 }
 
 .skill-item_html {
