@@ -216,11 +216,11 @@ button.hover{
     background-color: var(--green);
 }
 
-.contact-link_phone {
+.phone {
     background-image: url(../img/icon=phone.svg);
 }
 
-.contact-link_mail {
+.email {
     background-image: url(../img/icon=email.svg);
 }
 
