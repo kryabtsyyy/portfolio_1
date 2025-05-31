@@ -126,7 +126,7 @@ button {
     cursor: pointer;
 }
 
-button.hover{
+button:hover{
     padding: 6px 10px 10px 10px;
     border: 1px solid #09A494;
     border-radius: 5px;
@@ -172,7 +172,7 @@ button.hover{
     background-position: center;
 }
 
-.social-link.hover {
+.social-link:hover {
     background-color: var(--green);
 }
 
@@ -217,7 +217,7 @@ button.hover{
     background-repeat: no-repeat;
 }
 
-.contact-link.hover {
+.contact-link:hover {
     background-color: var(--green);
 }
 
