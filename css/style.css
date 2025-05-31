@@ -65,11 +65,14 @@ nav {
     line-height: 1;
     padding: 10px 15px 10px 15px;
     color: var(--txt-color);
-    
 }
 
 nav:hover {
     color: var(--green);
+}
+
+img {
+    border-radius: 50%;
 }
 
 a {
