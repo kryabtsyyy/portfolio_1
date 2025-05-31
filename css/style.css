@@ -93,17 +93,17 @@ subtitle {
 
 body {
     color: var(--txt-color);
-    background-color: var(var(--bg-color));
+    background-color: var(--bg-color);
 }
 
 footer {
     color: var(--txt-color);
-    background-color: var(var(--bg-color));
+    background-color: var(--bg-color);
 }
 
 nav {
     color: var(--txt-color);
-    background-color: var(var(--bg-color));
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -223,19 +223,6 @@ button.hover{
 
 .email {
     background-image: url(../img/icon=email.svg);
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 .skill-list {
