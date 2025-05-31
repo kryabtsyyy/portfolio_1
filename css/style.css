@@ -119,8 +119,8 @@ nav {
 
 button {
     padding: 6px 10px 10px 10px;
-    border: 5px solid #09A494;
-    border-radius: 100%;
+    border: 1px solid #09A494;
+    border-radius: 1px;
     color: var(--green);
     background-color: var(--bg-color);
     cursor: pointer;
@@ -128,8 +128,8 @@ button {
 
 button.hover{
     padding: 6px 10px 10px 10px;
-    border: 5px solid #09A494;
-    border-radius: 100%;
+    border: 1px solid #09A494;
+    border-radius: 1px;
     color: var(--bg-color);
     background-color: var(--green);
     cursor: pointer;
