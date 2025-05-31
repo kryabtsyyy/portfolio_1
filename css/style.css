@@ -71,7 +71,7 @@ nav:hover {
 }
 
 .main-nav {
-    color: var(#0000ff);
+    color: var(--txt-color);
 }
 
 a {
