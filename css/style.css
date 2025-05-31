@@ -120,7 +120,7 @@ nav {
 button {
     padding: 6px 10px 10px 10px;
     border: 1px solid #09A494;
-    border-radius: 1px;
+    border-radius: 5px;
     color: var(--green);
     background-color: var(--bg-color);
     cursor: pointer;
