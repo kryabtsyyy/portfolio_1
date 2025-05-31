@@ -129,7 +129,7 @@ button {
 button.hover{
     padding: 6px 10px 10px 10px;
     border: 1px solid #09A494;
-    border-radius: 1px;
+    border-radius: 5px;
     color: var(--bg-color);
     background-color: var(--green);
     cursor: pointer;
