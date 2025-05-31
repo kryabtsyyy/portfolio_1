@@ -70,16 +70,13 @@ nav:hover {
     color: var(--green);
 }
 
-.main-nav {
-    color: var(--txt-color);
-}
-
 a {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
     text-decoration: none;
+    color: var(--txt-color);
 }
 
 a:hover {
