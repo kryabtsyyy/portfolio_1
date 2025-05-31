@@ -119,8 +119,7 @@ nav {
 
 button {
     padding: 6px 10px 10px 10px;
-    border: 5px;
-    border-color: var(--green);
+    border: 5px solid #09A494;
     border-radius: 100%;
     color: var(--green);
     background-color: var(--bg-color);
@@ -129,7 +128,7 @@ button {
 
 button.hover{
     padding: 6px 10px 10px 10px;
-    border: 5px;
+    border: 5px solid #09A494;
     border-radius: 100%;
     color: var(--bg-color);
     background-color: var(--green);
