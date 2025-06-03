@@ -25,6 +25,7 @@ body {
     display: flex;
     padding-top: 60px;
     gap: 40px;
+    align-items: center;
 }
 
 .main-footer {
