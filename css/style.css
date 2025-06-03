@@ -21,6 +21,12 @@ body {
     background-color: var(--bg-color);
 }
 
+.main-header {
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+}
+
 .main-footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
