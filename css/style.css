@@ -195,7 +195,7 @@ section {
 }
 
 button {
-    padding: 6px 10px 10px 10px;
+    padding: 6px 9px 8px 9px;
     border: 1px solid #09A494;
     border-radius: 5px;
     color: var(--green);
@@ -318,14 +318,14 @@ button:hover{
     }
 .skill-list dt {
     margin-bottom: 6px;
-    padding: 5px 0 3px 38px;
+    padding: 5px 0 5px 38px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: 30px;
 }
 .skill-level {
     margin: 4px 0 20px;
-    padding: 2px;
+    padding: 1px;
     font-size: 0;
     border: 1px solid var(--txt-color);
     border-radius: 16px;
