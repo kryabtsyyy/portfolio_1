@@ -107,6 +107,23 @@ p:last-child {
     max-width: 800px;
 }
 
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.skill-header h2 {
+    margin-bottom: 0px;
+}
+
+.skill-header div * {
+    margin: 0;
+    margin-left: 20px;
+}
+
+
 a {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
