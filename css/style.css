@@ -57,6 +57,8 @@ h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -90,6 +92,19 @@ nav:hover {
 
 img {
     border-radius: 50%;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.text-wrapper {
+    max-width: 800px;
 }
 
 a {
