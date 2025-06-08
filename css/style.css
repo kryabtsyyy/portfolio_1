@@ -21,6 +21,8 @@
     margin-bottom: 20px;
 }
 
+a {display: inline-block}
+img {display: block}
 body {
     font-family: "Open Sans", "Arial", sans-serif;
 
