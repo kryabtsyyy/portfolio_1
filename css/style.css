@@ -21,6 +21,8 @@
     margin-bottom: 20px;
 }
 
+a {display: inline-block};
+img {display: block};
 body {
     font-family: "Open Sans", "Arial", sans-serif;
 
@@ -94,6 +96,8 @@ nav:hover {
 
 img {
     border-radius: 50%;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -135,6 +139,7 @@ a {
     line-height: 1;
     text-decoration: none;
     color: var(--txt-color);
+    transition: color 0.45s, background-color 0.45s;
 }
 
 a:hover {
@@ -313,7 +318,7 @@ button:hover{
     }
 .skill-list dt {
     margin-bottom: 6px;
-    padding: 5px 0 5px 38px;
+    padding: 5px 0 3px 38px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: 30px;
