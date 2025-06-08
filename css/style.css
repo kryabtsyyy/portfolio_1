@@ -10,6 +10,16 @@
     --bg-color: #ffffff;
 }
 
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
 
 body {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -102,6 +112,7 @@ subtitle {
     font-weight: 400;
     line-height: 1.5;
     color: var(--green);
+    margin: 0;
 }
 
 body {
