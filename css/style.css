@@ -147,7 +147,7 @@ nav {
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .container {
