@@ -118,9 +118,11 @@ p:last-child {
     margin-bottom: 0px;
 }
 
-.skill-header div * button {
-    margin: 0;
-    margin-left: 20px;
+.skill-header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 
