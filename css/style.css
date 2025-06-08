@@ -41,6 +41,8 @@ body {
 .main-footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -168,6 +170,17 @@ nav {
     display: flex;
     gap: 10px;
 }
+
+section {
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+.main-header {
+    margin: 0;
+    margin-bottom: 120px;
+}
+
 
 .container {
     min-width: 320px;
