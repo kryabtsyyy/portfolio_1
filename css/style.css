@@ -159,7 +159,6 @@ section {
 .skill-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
     margin-bottom: 40px;
     flex-wrap: wrap;
@@ -268,6 +267,10 @@ section {
     .introduction img {
         width: 250px;
         height: 250px;
+    }
+
+    .skill-header h2 {
+        align-self: center;
     }
 
      .contact-link {
@@ -393,23 +396,13 @@ section {
     .skill-header button {
         width: 100%;
     }
+
+    .skill-header h2 {
+        align-self: flex-start;
+    }
 }
 
 @media screen and (max-width: 360px) {
-    .skill-header{
-        flex-direction: column;
-    }
-
-    .skill-header div {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .skill-header button {
-        width: 100%;
-    }
-
     .contact {
         flex-direction: column;
         gap: 15px;
