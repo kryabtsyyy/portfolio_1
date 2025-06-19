@@ -33,6 +33,10 @@ body {
     margin-bottom: 120px;
 }
 
+.main-header-wrap {
+    display: flex;
+}
+
 .main-footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
@@ -174,7 +178,8 @@ section {
     margin: 0;
     padding: 0;
     line-height: 1;
-    }
+}
+
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
@@ -220,6 +225,7 @@ section {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -248,10 +254,23 @@ section {
         font-size: 28px;
     }
 
-    .introduction img{
+    section {
+        margin-bottom: 80px;
+    }
+
+    .main-header {
+        margin-bottom: 80px;
+    }
+
+    .introduction img {
         width: 250px;
         height: 250px;
     }
+
+     .contact-link {
+        padding: 7px 0px 7px 42px;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -314,23 +333,38 @@ section {
     }
 
 
-    .introduction{
+    .introduction {
         flex-direction: column-reverse;
         gap: 30px;
-    }Add commentMore actions
-    .introduction h1{
+    }
+    .introduction h1 {
         margin-bottom: 10px;
     }
-    .introduction img{
+    .introduction img {
         width: 150px;
         height: 150px;
     }
-    .introduction div{
+    .introduction div {
         text-align: center;
     }
 
-    .skill-header{
+    .skill-header {
         margin-bottom: 30px;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+    .contact-link {
+        padding: 8px 0px 8px 42px;
+    }
+    .social {
+        gap: 15px;
+    }
+
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -338,13 +372,27 @@ section {
     .skill-header{
         flex-direction: column;
     }
+
+    .skill-header h2 {
+        margin-bottom: 20px;
+    }
+
     .skill-header div {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
+
     .skill-header button {
         width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .social {
+        gap: 15px;
     }
 
 
@@ -361,12 +409,14 @@ section {
 }
 
 .contact {
-    width: 420px;
+    justify-content: flex-start;
+    gap: 40px;
     margin-bottom: 40px;
 }
 
 .social {
-    width: 330px;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .social li,
