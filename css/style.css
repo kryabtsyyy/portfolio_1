@@ -222,6 +222,102 @@ section {
     justify-content: space-between;
 }
 
+
+.nav-btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    .me img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body{
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .main-header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-header{
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a{
+        padding: 20px 30px;
+    }
+
+    .nav-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        padding: 0;
+    }
+    
+    .nav-btn_close {
+        background-image: url("../img/btn=close.svg");;
+    }
+    .nav-btn_open {
+        background-image: url("../img/btn=burger.svg");;
+    }
+
+    .main-header-wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 .contact {
     width: 420px;
     margin-bottom: 40px;
