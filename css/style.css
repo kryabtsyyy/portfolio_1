@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -29,7 +34,6 @@ body {
     gap: 40px;
     align-items: center;
     margin: 0;
-    margin-top: 0;
     margin-bottom: 120px;
 }
 
@@ -70,10 +74,6 @@ h3 {
 p {
     margin: 0;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 p:last-child {
@@ -81,7 +81,7 @@ p:last-child {
 }
 
 .subtitle {
-    font-size: 20px;
+    font-size: 38px;
     line-height: 1.2;
     letter-spacing: 0;
     color: var(--green);
@@ -230,6 +230,92 @@ section {
     flex-wrap: wrap;
 }
 
+.contact {
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.social {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.social li,
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-link:hover {
+    background-color: var(--green);
+}
+
+.instagram {
+   background-image: url(../img/social=instagram.svg);
+}
+
+.gitlab {
+    background-image: url(../img/social=gitlab.svg);
+}
+
+.github {
+    background-image: url(../img/social=github.svg);
+}
+
+.telegram {
+    background-image: url(../img/social=telegram.svg);
+}
+
+.vk {
+    background-image: url(..//img/social=vk.svg);
+}
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px 5px 42px;
+    color: var(--txt-color);
+    background-repeat: no-repeat;
+}
+
+.contact-link:hover {
+    color: var(--green);
+}
+
+.phone {
+    background-image: url(../img/icon=phone.svg);
+}
+
+.email {
+    background-image: url(../img/icon=email.svg);
+}
 
 .nav-btn {
     display: none;
@@ -342,6 +428,16 @@ section {
         background-image: url("../img/btn=close.svg");;
     }
 
+    .nav-btn_open {
+        background-image: url("../img/btn=burger.svg");;
+    }
+
+    .main-header-wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .introduction {
         flex-direction: column-reverse;
@@ -410,103 +506,5 @@ section {
     .social {
         gap: 15px;
     }
-
-
-    .nav-btn_open {
-        background-image: url("../img/btn=burger.svg");;
-    }
-
-    .main-header-wrap{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 }
 
-.contact {
-    justify-content: flex-start;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.social {
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.social li,
-.contact li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.social-link {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid var(--green);
-    border-radius: 50%;
-    padding: 10px;
-    background-color: var(--bg-color);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-link:hover {
-    background-color: var(--green);
-}
-
-.instagram {
-   background-image: url(../img/social=instagram.svg);
-}
-
-.gitlab {
-    background-image: url(../img/social=gitlab.svg);
-}
-
-.github {
-    background-image: url(../img/social=github.svg);
-}
-
-.telegram {
-    background-image: url(../img/social=telegram.svg);
-}
-
-.vk {
-    background-image: url(..//img/social=vk.svg);
-}
-
-.contact-link {
-    display: block;
-    text-decoration: none;
-    padding: 5px 0px 5px 42px;
-    color: var(--txt-color);
-    background-repeat: no-repeat;
-}
-
-.contact-link:hover {
-    color: var(--green);
-}
-
-.phone {
-    background-image: url(../img/icon=phone.svg);
-}
-
-.email {
-    background-image: url(../img/icon=email.svg);
-}
