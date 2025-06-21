@@ -82,7 +82,7 @@ p:last-child {
 
 .subtitle {
     font-weight: 400;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 1.2;
     letter-spacing: 0;
     color: var(--green);
