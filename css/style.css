@@ -176,6 +176,7 @@ section {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    padding: 0px 5px;
 }
 
 .skill-list {
@@ -364,6 +365,10 @@ section {
     .skill-header h2 {
         align-self: center;
     }
+    
+    .skill-header div {
+        padding: 0px 5px;
+    }
 
      .contact-link {
         padding: 7px 0px 7px 42px;
@@ -464,6 +469,10 @@ section {
 
     .skill-header {
         margin-bottom: 30px;
+    }
+
+    .skill-header div {
+        padding: 0px 5px;
     }
 
     .contact {
