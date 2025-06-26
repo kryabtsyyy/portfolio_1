@@ -130,6 +130,7 @@ section {
 .main-nav a {
     padding: 10px 15px;
     text-decoration: none;
+    letter-spacing: 0;
     color: var(--txt-color);
 }
 
@@ -351,6 +352,10 @@ section {
         margin-bottom: 80px;
     }
 
+    .main-nav a {
+        letter-spacing: 0;
+    }
+
     .introduction img {
         width: 250px;
         height: 250px;
@@ -411,10 +416,12 @@ section {
     .main-nav {
         flex-direction: column;
         text-align: center;
+        letter-spacing: 0;
     }
 
-    .main-nav a{
+    .main-nav a {
         padding: 20px 30px;
+        letter-spacing: 0;
     }
 
     .nav-btn {
