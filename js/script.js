@@ -1,4 +1,7 @@
-const data = [
+const skillList = document.querySelector('.skill-list');
+
+const skills = {
+    data: [
     {
         // Название навыка 
         name: 'HTML',
@@ -27,38 +30,47 @@ const data = [
         level: 70,
         className: 'skill-cpp'
     }
-];
+    ] ,
 
-const skillList = document.querySelector('.skill-list');
-// Создание элементов
-data.forEach(skill => {
-    const skillNameElement = document.createElement('dt'); // Название навыка (HTML, CSS и т.д.)
-    const skillBarContainer = document.createElement('dd');  // Контейнер для полосы прогресса
-    const skillBar = document.createElement('div');          // Полоса прогресса
+    generateList(parentElement) {
+            if (!parentElement) {
+                console.error('Ошибка: Элемент-контейнер не был передан или не найден на странице.');
+                return;
+            }
 
-    // Настройка элементов 
+        // Создание элементов
+        this.data.forEach(skill => {
+            const skillNameElement = document.createElement('dt'); // Название навыка (HTML, CSS и т.д.)
+            const skillBarContainer = document.createElement('dd');  // Контейнер для полосы прогресса
+            const skillBar = document.createElement('div');          // Полоса прогресса
+
+        // Настройка элементов 
     
-    // Название навыка (dt)
-    skillNameElement.textContent = skill.name;
+        // Название навыка (dt)
+        skillNameElement.textContent = skill.name;
 
-    //Интерполяция для создания пути
-    skillNameElement.style.backgroundImage = `url("../img/${skill.iconName}")`;
+        //Интерполяция для создания пути
+        skillNameElement.style.backgroundImage = `url("../img/${skill.iconName}")`;
 
-    // Контейнер полосы прогресса (dd)
-    skillBarContainer.classList.add('skill-bar-container'); 
+        // Контейнер полосы прогресса (dd)
+        skillBarContainer.classList.add('skill-bar-container'); 
     
-    // Добавляем уникальный класс для конкретного навыка 
-    skillBar.classList.add('skill-bar', skill.className);
+        // Добавляем уникальный класс для конкретного навыка 
+        skillBar.classList.add('skill-bar', skill.className);
     
-    // Установка ширины полосы (в процентах)
-    skillBar.style.width = `${skill.level}%`;
+        // Установка ширины полосы (в процентах)
+        skillBar.style.width = `${skill.level}%`;
     
-    // Добавляем текст
-    skillBar.textContent = `${skill.level}%`; 
+        // Добавляем текст
+        skillBar.textContent = `${skill.level}%`; 
 
-    // Вложение элементов
-    skillBarContainer.append(skillBar); 
+        // Вложение элементов
+        skillBarContainer.append(skillBar); 
 
-    // Добавление элементов на страницу
-    skillList.append(skillNameElement, skillBarContainer);
-});
+        // Добавление элементов на страницу
+        skillList.append(skillNameElement, skillBarContainer);
+                                    }) 
+                            }
+            };
+
+ skill.generateList(skillList);
