@@ -39,12 +39,11 @@ const skills = {
             }
 
         // Создание элементов
+        // Настройка элементов 
         this.data.forEach(skill => {
             const skillNameElement = document.createElement('dt'); // Название навыка (HTML, CSS и т.д.)
             const skillBarContainer = document.createElement('dd');  // Контейнер для полосы прогресса
             const skillBar = document.createElement('div');          // Полоса прогресса
-
-        // Настройка элементов 
     
         // Название навыка (dt)
         skillNameElement.textContent = skill.name;
