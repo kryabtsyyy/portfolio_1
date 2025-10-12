@@ -53,7 +53,7 @@ const skills = {
         // Контейнер полосы прогресса (dd)
         skillBarContainer.classList.add('skill-level'); 
 
-        skillBar.classList.add('skill-level', skill.className);
+        skillBar.classList.add('skill-level-bar', skill.className);
         // Установка ширины полосы (в процентах)
         skillBar.style.width = `${skill.level}%`;
     
