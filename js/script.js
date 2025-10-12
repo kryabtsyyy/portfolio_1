@@ -9,21 +9,25 @@ const skills = {
         iconName: 'skill=html.svg', 
         // Уровень владения (число от 0 до 100)
         level: 30, 
+        className: 'skill-html' 
     },
     {
         name: 'CSS',
         iconName: 'skill=css.svg',
         level: 20,
+        className: 'skill-css'
     },
     {
         name: 'Python',
         iconName: 'skill=python.svg',
         level: 50,
+        className: 'skill-python'
     },
     {
         name: 'C++',
         iconName: 'skill=c++.svg',
         level: 70,
+        className: 'skill-c++'
     }
     ] ,
 
@@ -47,8 +51,9 @@ const skills = {
         skillNameElement.style.backgroundImage = `url("img/${skill.iconName}")`;
 
         // Контейнер полосы прогресса (dd)
-        skillBarContainer.classList.add('skill-bar-container'); 
-    
+        skillBarContainer.classList.add('skill-level'); 
+
+        skillBar.classList.add('skill-level', skill.className);
         // Установка ширины полосы (в процентах)
         skillBar.style.width = `${skill.level}%`;
     
