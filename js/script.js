@@ -72,4 +72,4 @@ const skills = {
                             }
             };
 
- skill.generateList(skillList);
+ skills.generateList(skillList);
