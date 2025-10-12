@@ -208,6 +208,24 @@ section {
     transform: lowercase;
 }
 
+
+.html {
+    background-image: url("../img/skill=html.svg");
+}
+
+.css {
+    background-image: url("../img/skill=css.svg");
+}
+
+.cpp {
+    background-image: url("../img/skill=c++.svg");
+}
+
+.python {
+    background-image: url("../img/skill=python.svg");
+}
+
+
 .social,
 .contact {
     margin: 0;
