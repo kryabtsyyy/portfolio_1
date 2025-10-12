@@ -195,14 +195,20 @@ section {
 .skill-level {
     margin: 0 0 20px;
     padding: 1px;
-    font-size: 0;
     border: 1px solid var(--txt-color);
     border-radius: 16px;
 }
+
 .skill-level div {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
+    font-size: 16px; 
+    font-weight: 700;
+    line-height: 14px; 
+    text-align: right; 
+    color: var(--bg-color); 
+    padding-right: 8px; 
 }
 .skill-item {
     transform: lowercase;
