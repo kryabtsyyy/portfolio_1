@@ -44,7 +44,7 @@ const skills = {
         skillNameElement.textContent = skill.name;
 
         //Интерполяция для создания пути
-        skillNameElement.style.backgroundImage = `url("../img/${skill.iconName}")`;
+        skillNameElement.style.backgroundImage = `url("img/${skill.iconName}")`;
 
         // Контейнер полосы прогресса (dd)
         skillBarContainer.classList.add('skill-bar-container'); 
