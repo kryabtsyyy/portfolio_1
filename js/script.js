@@ -3,11 +3,8 @@ const skillList = document.querySelector('.skill-list');
 const skills = {
     data: [
     {
-        // Название навыка 
         name: 'HTML',
-        //Хранение файла иконки
         iconName: 'skill=html.svg', 
-        // Уровень владения (число от 0 до 100)
         level: 30, 
         className: 'skill-html' 
     },
@@ -37,33 +34,31 @@ const skills = {
                 return;
             }
 
-        // Создание элементов
-        // Настройка элементов 
         this.data.forEach(skill => {
-            const skillNameElement = document.createElement('dt'); // Название навыка (HTML, CSS и т.д.)
-            const skillBarContainer = document.createElement('dd');  // Контейнер для полосы прогресса
-            const skillBar = document.createElement('div');          // Полоса прогресса
+            const skillNameElement = document.createElement('dt'); 
+            const skillBarContainer = document.createElement('dd');  
+            const skillBar = document.createElement('div');          
     
-        // Название навыка (dt)
+        
         skillNameElement.textContent = skill.name;
 
-        //Интерполяция для создания пути
+        
         skillNameElement.style.backgroundImage = `url("img/${skill.iconName}")`;
 
-        // Контейнер полосы прогресса (dd)
+        
         skillBarContainer.classList.add('skill-level'); 
 
         skillBar.classList.add('skill-level-bar', skill.className);
-        // Установка ширины полосы (в процентах)
+        
         skillBar.style.width = `${skill.level}%`;
     
-        // Добавляем текст
+        
         skillBar.textContent = `${skill.level}%`; 
 
-        // Вложение элементов
+        
         skillBarContainer.append(skillBar); 
 
-        // Добавление элементов на страницу
+        
         skillList.append(skillNameElement, skillBarContainer);
                                     }) 
                             }
