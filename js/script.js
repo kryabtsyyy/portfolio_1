@@ -1,67 +1,32 @@
-const skillList = document.querySelector('.skill-list');
-
 const skills = {
-    data: [
-    {
-        name: 'HTML',
-        iconName: 'skill=html.svg', 
-        level: 30, 
-        className: 'skill-html' 
-    },
-    {
-        name: 'CSS',
-        iconName: 'skill=css.svg',
-        level: 20,
-        className: 'skill-css'
-    },
-    {
-        name: 'Python',
-        iconName: 'skill=python.svg',
-        level: 50,
-        className: 'skill-python'
-    },
-    {
-        name: 'C++',
-        iconName: 'skill=c++.svg',
-        level: 70,
-        className: 'skill-c++'
-    }
-    ] ,
-
-    generateList(parentElement) {
-            if (!parentElement) {
-                console.error('Ошибка: Элемент-контейнер не был передан или не найден на странице.');
-                return;
-            }
-
-        this.data.forEach(skill => {
-            const skillNameElement = document.createElement('dt'); 
-            const skillBarContainer = document.createElement('dd');  
-            const skillBar = document.createElement('div');          
+    data : [
+        {skillName: 'html',     value: 30,  icon: 'html.svg'},
+        {skillName: 'css',      value: 20,  icon: 'css.svg'},
+        {skillName: 'python',   value: 50,  icon: 'c++.svg'},
+        {skillName: 'cpp',      value: 70,  icon: 'python.svg'}
+    ],
     
-        
-        skillNameElement.textContent = skill.name;
+    generateList(skillList){
+        this.data.forEach(skillData => {
+            const nameElement = document.createElement('dt');
+            nameElement.classList.add(`skill-item`)
+            nameElement.style.backgroundImage = `url("img/skill=${(skillData.icon)}")`;
+            nameElement.innerHTML = skillData.skillName;
 
-        
-        skillNameElement.style.backgroundImage = `url("img/${skill.iconName}")`;
+            const levelElement = document.createElement('dd');
+            levelElement.classList.add('skill-level');
 
-        
-        skillBarContainer.classList.add('skill-level'); 
+            const levelBlock = document.createElement('div');
+            levelBlock.style.width = `${skillData.value}%`;
+            levelBlock.innerHTML = `${skillData.value}%`;
 
-        skillBar.classList.add('skill-level-bar', skill.className);
-        
-        skillBar.style.width = `${skill.level}%`;
-    
-        
-        skillBar.textContent = `${skill.level}%`; 
+            levelElement.append(levelBlock);
 
-        
-        skillBarContainer.append(skillBar); 
+            skillList.append(nameElement, levelElement);
+        })
+}
+}
 
-        
-        skillList.append(skillNameElement, skillBarContainer);
-                                    }) 
-                            }
-            };
+const skillList = document.querySelector('.skill-list')
 
- skills.generateList(skillList);
+skills.generateList(skillList)
