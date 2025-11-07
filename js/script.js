@@ -1,12 +1,12 @@
 const skills = {
-    data : [
-        {skillName: 'html',     value: 30,  icon: 'html.svg'},
-        {skillName: 'css',      value: 20,  icon: 'css.svg'},
-        {skillName: 'python',   value: 50,  icon: 'c++.svg'},
-        {skillName: 'cpp',      value: 70,  icon: 'python.svg'}
+    data: [
+        { skillName: 'html', value: 30, icon: 'html.svg' },
+        { skillName: 'css', value: 20, icon: 'css.svg' },
+        { skillName: 'python', value: 50, icon: 'c++.svg' },
+        { skillName: 'cpp', value: 70, icon: 'python.svg' }
     ],
-    
-    generateList(skillList){
+
+    generateList(skillList) {
         this.data.forEach(skillData => {
             const nameElement = document.createElement('dt');
             nameElement.classList.add(`skill-item`)
@@ -24,7 +24,7 @@ const skills = {
 
             skillList.append(nameElement, levelElement);
         })
-}
+    }
 }
 
 const skillList = document.querySelector('.skill-list')

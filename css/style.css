@@ -15,8 +15,13 @@
     --bg-color: #ffffff;
 }
 
-a {display: inline-block}
-img {display: block}
+a {
+    display: inline-block
+}
+
+img {
+    display: block
+}
 
 body {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -192,6 +197,7 @@ section {
     background-repeat: no-repeat;
     background-size: 30px;
 }
+
 .skill-level {
     margin: 0 0 20px;
     padding: 1px;
@@ -203,13 +209,14 @@ section {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 700;
-    line-height: 14px; 
-    text-align: right; 
-    color: var(--bg-color); 
-    padding-right: 8px; 
+    line-height: 14px;
+    text-align: right;
+    color: var(--bg-color);
+    padding-right: 8px;
 }
+
 .skill-item {
     transform: lowercase;
 }
@@ -274,7 +281,7 @@ section {
 }
 
 .instagram {
-   background-image: url(../img/social=instagram.svg);
+    background-image: url(../img/social=instagram.svg);
 }
 
 .gitlab {
@@ -318,7 +325,7 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-    body{
+    body {
         font-size: 16px;
     }
 
@@ -358,12 +365,12 @@ section {
     .skill-header h2 {
         align-self: center;
     }
-    
+
     .skill-header div {
         padding: 0px 5px;
     }
 
-     .contact-link {
+    .contact-link {
         padding: 7px 0px 7px 42px;
     }
 
@@ -374,7 +381,7 @@ section {
 }
 
 @media screen and (max-width: 650px) {
-    body{
+    body {
         font-size: 14px;
     }
 
@@ -395,7 +402,7 @@ section {
         font-size: 20px;
     }
 
-    section{
+    section {
         margin-bottom: 50px;
     }
 
@@ -404,7 +411,7 @@ section {
         height: 40px;
     }
 
-    .main-header{
+    .main-header {
         flex-direction: column;
         padding-top: 20px;
         gap: 20px;
@@ -429,16 +436,18 @@ section {
         border: 0;
         padding: 0;
     }
-    
+
     .nav-btn_close {
-        background-image: url("../img/btn=close.svg");;
+        background-image: url("../img/btn=close.svg");
+        ;
     }
 
     .nav-btn_open {
-        background-image: url("../img/btn=burger.svg");;
+        background-image: url("../img/btn=burger.svg");
+        ;
     }
 
-    .main-header-wrap{
+    .main-header-wrap {
         width: 100%;
         display: flex;
         align-items: center;
@@ -449,13 +458,16 @@ section {
         flex-direction: column-reverse;
         gap: 30px;
     }
+
     .introduction h1 {
         margin-bottom: 10px;
     }
+
     .introduction img {
         width: 150px;
         height: 150px;
     }
+
     .introduction div {
         text-align: center;
     }
@@ -471,9 +483,11 @@ section {
     .contact {
         margin-bottom: 20px;
     }
+
     .contact-link {
         padding: 8px 0px 8px 42px;
     }
+
     .social {
         gap: 15px;
     }
@@ -489,10 +503,10 @@ section {
 }
 
 @media screen and (max-width: 380px) {
-    .skill-header{
+    .skill-header {
         flex-direction: column;
     }
-    
+
     .skill-header div {
         flex-direction: column;
         align-items: flex-start;
@@ -513,8 +527,8 @@ section {
         flex-direction: column;
         gap: 15px;
     }
+
     .social {
         gap: 15px;
     }
 }
-
