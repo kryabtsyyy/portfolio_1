@@ -1,3 +1,5 @@
+const skillErrorBlock = document.querySelector('.skill-error')
+const skillReload = document.querySelector('.skill-reload')
 const skillList = document.querySelector('.skill-list')
 const sortBlock = document.querySelector('.skill-sort')
 const mainNav = document.querySelector('.main-nav')
@@ -26,16 +28,29 @@ themeCheckbox.addEventListener('change', () =>{
 })
 
 const skills = {
-    data: [
-        { skillName: 'html', value: 30, icon: 'html.svg' },
-        { skillName: 'css', value: 20, icon: 'css.svg' },
-        { skillName: 'python', value: 50, icon: 'python.svg' },
-        { skillName: 'cpp', value: 70, icon: 'c++.svg' }
-    ],
+    data : [],
 
     sortType : null,
 
-    generateList(skillList) {
+
+    async getData(){
+        await fetch('db/skills.json')
+            .then(data => data.json())
+            .then(object => this.data = [...object['data']])
+            .catch(e => console.log("Skills load error"));
+    },
+
+
+    async generateList(skillList){
+        if(this.data.length == 0){
+            await this.getData();
+            if(this.data.length == 0){
+                skillErrorBlock.classList.remove('visually-hidden')
+                sortBlock.classList.add('visually-hidden')
+                return;
+            }
+        }
+
         skillList.innerHTML = '';
         this.data.forEach(skillData => {
             const nameElement = document.createElement('dt');
@@ -77,7 +92,7 @@ const skills = {
         }
 
         this.generateList(skillList);
-        }
+    }
 }
 
 const menu = {
@@ -104,6 +119,11 @@ menu.close();
 
 skills.generateList(skillList)
 
+skillReload.addEventListener('click', () => {
+    skillErrorBlock.classList.add('visually-hidden')
+    sortBlock.classList.remove('visually-hidden')
+    skills.generateList(skillList);
+})
 
 sortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName !== "BUTTON"){
@@ -129,11 +149,9 @@ function getComparer(prop){
 
 navBtn.addEventListener('click', () => {
     if(menu.isOpen){
-        console.log('close');
         menu.close();
     }
     else{
         menu.open();
-        console.log('open');
     }
 })
