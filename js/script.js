@@ -2,6 +2,28 @@ const skillList = document.querySelector('.skill-list')
 const sortBlock = document.querySelector('.skill-sort')
 const mainNav = document.querySelector('.main-nav')
 const navBtn = document.querySelector('.nav-btn')
+const themeCheckbox = document.querySelector('.switch-checkbox')
+
+if(localStorage.getItem("darkTheme")){
+    if(localStorage.getItem("darkTheme") === "true"){
+        themeCheckbox.checked = true;
+        document.querySelector('body').classList.add('dark-theme');
+    }
+    else{
+        themeCheckbox.checked = false;
+        document.querySelector('body').classList.remove('dark-theme');
+    }
+}
+
+themeCheckbox.addEventListener('change', () =>{
+    if(themeCheckbox.checked){
+        document.querySelector('body').classList.add('dark-theme');
+    }
+    else{
+        document.querySelector('body').classList.remove('dark-theme');
+    }
+    localStorage.setItem("darkTheme", themeCheckbox.checked);
+})
 
 const skills = {
     data: [
