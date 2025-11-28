@@ -15,6 +15,15 @@
     --bg-color: #ffffff;
 }
 
+.dark-theme {
+    --txt-color: #CCCCCC;
+    --bg-color: #212121;
+}
+
+.dark-theme .social-link {
+    background-color: #CCCCCC;
+}
+
 a {
     display: inline-block
 }
@@ -322,6 +331,14 @@ section {
 
 .email {
     background-image: url(../img/icon=email.svg);
+}
+
+.dark-theme .email {
+    background-image: url("../img/icon=email.svg");
+}
+
+.dark-theme .phone {
+    background-image: url("../img/icon=phone.svg");
 }
 
 .nav-btn {
