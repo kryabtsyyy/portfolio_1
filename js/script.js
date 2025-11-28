@@ -7,8 +7,8 @@ const skills = {
     data: [
         { skillName: 'html', value: 30, icon: 'html.svg' },
         { skillName: 'css', value: 20, icon: 'css.svg' },
-        { skillName: 'python', value: 50, icon: 'c++.svg' },
-        { skillName: 'cpp', value: 70, icon: 'python.svg' }
+        { skillName: 'python', value: 50, icon: 'python.svg' },
+        { skillName: 'cpp', value: 70, icon: 'c++.svg' }
     ],
 
     sortType : null,
