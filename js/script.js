@@ -46,8 +46,8 @@ const skills = {
         if(this.data.length == 0){
             await this.getData();
             if(this.data.length == 0){
-                skillErrorBlock.classList.remove('visually-hidden')
-                sortBlock.classList.add('visually-hidden')
+                skillErrorBlock.classList.remove('hidden')
+                sortBlock.classList.add('hidden')
                 return;
             }
         }
@@ -121,8 +121,8 @@ menu.close();
 skills.generateList(skillList)
 
 skillReload.addEventListener('click', () => {
-    skillErrorBlock.classList.add('visually-hidden')
-    sortBlock.classList.remove('visually-hidden')
+    skillErrorBlock.classList.add('hidden')
+    sortBlock.classList.remove('hidden')
     skills.generateList(skillList);
 })
 
