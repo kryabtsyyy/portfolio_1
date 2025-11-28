@@ -1,3 +1,8 @@
+const skillList = document.querySelector('.skill-list')
+const sortBlock = document.querySelector('.skill-sort')
+const mainNav = document.querySelector('.main-nav')
+const navBtn = document.querySelector('.nav-btn')
+
 const skills = {
     data: [
         { skillName: 'html', value: 30, icon: 'html.svg' },
@@ -53,11 +58,31 @@ const skills = {
         }
 }
 
-const skillList = document.querySelector('.skill-list')
+const menu = {
+    isOpen: true,
+
+    close(){
+        mainNav.classList.add('main-nav_closed');
+        navBtn.classList.remove('nav-btn_close');
+        navBtn.classList.add('nav-btn_open');
+        navBtn.innerHTML = '<span class="visually-hidden">Открыть меню</span>'
+        menu.isOpen = false;
+    },
+
+    open(){
+        mainNav.classList.remove('main-nav_closed');
+        navBtn.classList.remove('nav-btn_open');
+        navBtn.classList.add('nav-btn_close');
+        navBtn.innerHTML = '<span class="visually-hidden">Закрыть меню</span>'
+        menu.isOpen = true;
+    }
+}
+
+menu.close();
 
 skills.generateList(skillList)
 
-const sortBlock = document.querySelector('.skill-sort')
+
 sortBlock.addEventListener('click', (e) => {
     if (e.target.nodeName !== "BUTTON"){
         return;
@@ -79,3 +104,14 @@ function getComparer(prop){
         return 0;
     }
 }
+
+navBtn.addEventListener('click', () => {
+    if(menu.isOpen){
+        console.log('close');
+        menu.close();
+    }
+    else{
+        menu.open();
+        console.log('open');
+    }
+})

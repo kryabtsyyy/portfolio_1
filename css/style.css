@@ -115,6 +115,10 @@ button:hover {
     background-color: var(--green);
     color: var(--bg-color);
 }
+.nav-btn:hover{
+    color: var(--second-color);
+    background-color: var(--bg-color);
+}
 
 section {
     margin: 0;
@@ -422,6 +426,10 @@ section {
         flex-direction: column;
         text-align: center;
         letter-spacing: 0;
+    }
+
+    .main-nav_closed {
+        display: none;
     }
 
     .main-nav a {
