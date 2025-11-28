@@ -25,6 +25,11 @@
     background-color: #CCCCCC;
 }
 
+.dark-theme .main-footer {
+    background-color: var(--second-color);
+}
+
+
 a {
     display: inline-block
 }
