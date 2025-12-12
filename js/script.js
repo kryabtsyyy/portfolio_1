@@ -64,7 +64,7 @@ const skills = {
 
             const levelBlock = document.createElement('div');
             levelBlock.style.width = `${skillData.value}%`;
-            //levelBlock.innerHTML = `${skillData.value}%`;
+            levelBlock.innerHTML = `${skillData.value}%`;
 
             levelElement.append(levelBlock);
             skillList.append(nameElement, levelElement);
