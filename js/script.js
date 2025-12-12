@@ -38,7 +38,7 @@ const skills = {
         await fetch('db/skills.json')
             .then(data => data.json())
             .then(object => this.data = [...object['data']])
-            .catch(e => console.log("Skills load error"));
+            .catch(() => console.log("Skills load error"));
     },
 
 
@@ -64,7 +64,11 @@ const skills = {
 
             const levelBlock = document.createElement('div');
             levelBlock.style.width = `${skillData.value}%`;
-            levelBlock.innerHTML = `${skillData.value}%`;
+
+            const levelSpan = document.createElement('span');
+            levelSpan.classList.add('visually-hidden');
+            levelSpan.textContent = `${skillData.value}%`;
+            levelBlock.append(levelSpan);
 
             levelElement.append(levelBlock);
             skillList.append(nameElement, levelElement);
