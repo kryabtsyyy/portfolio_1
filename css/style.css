@@ -340,11 +340,11 @@ section {
 }
 
 .dark-theme .email {
-    background-image: url("../img/icon=email.svg");
+    background-image: url("../img/icon=email_white.svg"); 
 }
 
 .dark-theme .phone {
-    background-image: url("../img/icon=phone.svg");
+    background-image: url("../img/icon=phone_white.svg"); 
 }
 
 .nav-btn {
